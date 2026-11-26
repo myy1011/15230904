@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行汽车调研：亿航EH216-S全方位调研分析</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;font-family:"Microsoft Yahei",sans-serif;}
+        body{background:#f5f7fa;color:#222;line-height:1.7;padding:0 16px;max-width:1100px;margin:0 auto;}
+        header{background:#194070;color:#fff;padding:32px 24px;border-radius:0 0 12px 12px;margin-bottom:24px;}
+        h1{font-size:28px;margin-bottom:8px;}
+        .info{opacity:0.9;font-size:15px;}
+        section{background:#fff;padding:24px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 8px #00000012;}
+        h2{color:#194070;border-left:4px solid #2b6cb0;padding-left:12px;margin-bottom:16px;font-size:22px;}
+        h3{font-size:18px;margin:16px 0 8px;color:#2c5282;}
+        p{margin-bottom:12px;}
+        ul{padding-left:24px;margin-bottom:12px;}
+        .param-table{width:100%;border-collapse:collapse;margin:16px 0;}
+        .param-table td,.param-table th{border:1px solid #ddd;padding:10px;text-align:left;}
+        .param-table th{background:#edf2f7;}
+        .ref{font-size:14px;color:#555;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>针对飞行汽车的全方位调研与分析 —— 亿航 EH216-S</h1>
+        <div class="info">课程：飞行汽车技术基础 | 作业：技术/产品深度调研</div>
+    </header>
+
+    <section>
+        <h2>1 产品简介</h2>
+        <p>EH216-S 是亿航智能研发的双座载人无人驾驶eVTOL，也是全球首个获得适航审定的载人电动垂直起降飞行器，采用多旋翼分布式动力构型，面向城市空中交通UAM。</p>
+        <table class="param-table">
+            <tr><th>参数项</th><th>指标</th></tr>
+            <tr><td>载客</td><td>2人</td></tr>
+            <tr><td>最大起飞重量</td><td>620kg</td></tr>
+            <tr><td>续航</td><td>约30km</td></tr>
+            <tr><td>巡航速度</td><td>130km/h</td></tr>
+            <tr><td>构型</td><td>8轴16桨分布式多旋翼</td></tr>
+            <tr><td>操控方式</td><td>全自动无人驾驶，无机载驾驶员</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>2 总体构型与子系统</h2>
+        <h3>2.1 气动与旋翼系统</h3>
+        <p>8组机臂，每组双旋翼共轴布局，垂直起降，不需要跑道；结构简单、控制逻辑成熟，但平飞气动效率偏低。</p>
+        <h3>2.2 动力与电池系统</h3>
+        <p>纯电驱动，多电机冗余设计；电池为高倍率锂电，满足起降峰值放电需求；电池包集成BMS热管理。短板：能量密度限制续航，充电时间长。</p>
+        <h3>2.3 飞控与感知系统</h3>
+        <p>多冗余飞控计算机，融合GPS、IMU、视觉避障雷达；地面指挥中心集群调度，支持预设航线、自动返航、故障迫降。</p>
+    </section>
+
+    <section>
+        <h2>3 技术可行性分析</h2>
+        <h3>✅ 可行优势</h3>
+        <ul>
+            <li>分布式多旋翼，单旋翼失效仍可安全降落，冗余安全高；</li>
+            <li>全自动无人驾驶，降低飞行员门槛，适配低空文旅、定点短途航线；</li>
+            <li>国内已拿到CAAC适航证，适航路径打通，是国内唯一成熟载人eVTOL；</li>
+            <li>起降场地要求低，仅需小型垂直起降平台（Vertiport）。</li>
+        </ul>
+        <h3>⚠️ 技术短板</h3>
+        <ul>
+            <li>锂电池能量密度瓶颈，续航仅30km，只能做极短途；</li>
+            <li>多旋翼构型高速平飞能耗高，不适合长距离通勤；</li>
+            <li>噪声问题，城区低空飞行噪声扰民；</li>
+            <li>低温环境电池衰减明显，环境适应性有限。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4 应用场景分析</h2>
+        <ul>
+            <li><strong>低空文旅观光（当前主力落地场景）</strong>：景区定点环线观光，已经在多地试点运营；</li>
+            <li><strong>应急救援</strong>：城市内人员转运、医疗急救、消防侦察；</li>
+            <li><strong>城市短途通勤（远期）</strong>：机场-高铁站、跨江跨区短途出行，受空域、基建限制；</li>
+            <li><strong>城市空中物流</strong>：同构型可改造为货运版本，轻量化物资投送。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5 市场可行性分析</h2>
+        <h3>政策层面</h3>
+        <p>国内低空经济政策放开，开放低空空域试点、支持eVTOL适航与商业化试点，优先“先观光、后通勤，先远郊、后城区”。</p>
+        <h3>市场与成本</h3>
+        <p>整机造价高，初期票价昂贵；当前市场规模很小，主要客户是文旅运营商、政府应急单位；C端大众通勤市场短期不具备经济性。</p>
+        <h3>竞争格局</h3>
+        <p>国内竞品：沃飞长空AE200、小鹏汇天；海外：Joby、Archer。EH216优势是率先拿到适航，落地速度领先。</p>
+    </section>
+
+    <section>
+        <h2>6 风险与挑战</h2>
+        <ul>
+            <li>空域管理：城市低空航线、空中交通管制（UTM）系统尚未大规模建成；</li>
+            <li>基础设施：垂直起降港、充电/换电站配套不足；</li>
+            <li>公众接受度：噪声、空中安全、事故风险顾虑；</li>
+            <li>商业化盈利模型：单位运营成本高，短期很难盈利。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7 结论与展望</h2>
+        <p>EH216-S在<strong>技术上具备落地可行性，是现阶段国内最成熟的载人eVTOL产品</strong>，优先在文旅、应急场景商业化；但受电池、噪声、空域、成本约束，大规模城市通勤还需要5~10年技术与基建迭代。未来固态电池、低噪声旋翼、低空交通管理系统是突破关键。</p>
+    </section>
+
+    <section>
+        <h2>参考文献</h2>
+        <p class="ref">[1] 亿航智能官方适航资料、产品白皮书</p>
+        <p class="ref">[2] 民航局载人eVTOL适航管理文件</p>
+        <p class="ref">[3] 飞行汽车关键技术及应用研究综述，汽车工程</p>
+        <p class="ref">[4] 新华网、36氪低空经济产业报道</p>
+    </section>
+</body>
+</html>
